@@ -1,0 +1,62 @@
+{
+  "name": "cloudinary",
+  "version": "1.0.0-beta",
+  "homepage": "http://cloudinary.com",
+  "authors": [
+    {
+      "name": "Cloudinary",
+      "email": "info@cloudinary.com",
+      "homepage": "http://cloudinary.com"
+    }
+  ],
+  "description": "Cloudinary streamlines your web application’s image manipulation needs. Cloudinary's cloud-based servers automate image uploading, resizing, cropping, optimizing, sprite generation and more. Cloudinary's jQuery plugin allows direct uploading from the browser to the cloud and dynamic cloud-based image transformations and effects.",
+  "main": "cloudinary.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cloudinary/bower-cloudinary.git"
+  },
+  "dependencies": {
+    "lodash": "3.x"
+  },
+  "main": [
+    "/cloudinary.js"
+  ],
+  "keywords": [
+    "CDN",
+    "cloud",
+    "cloudinary",
+    "convert",
+    "conversion",
+    "effects",
+    "files",
+    "images",
+    "manipulation",
+    "multiple",
+    "performance",
+    "picture",
+    "pictures",
+    "preview",
+    "progress",
+    "responsive",
+    "storage",
+    "thumbnail",
+    "thumbnails",
+    "transformations",
+    "uploads",
+    "videos",
+    "widgets"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
