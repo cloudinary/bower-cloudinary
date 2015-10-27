@@ -42,10 +42,6 @@ Optional:
 
 To set these configuration parameters use the `Cloudinary::config` function (see below).
 
-Note:
-
-When loading the jQuery Cloudinary library directly (using a `script` tag), the library automatically converts the relevant fileupload tags to utilize the upload functionality. If jquery.cloudinary is loaded as an [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md) however, you need to initialize the Cloudinary fileupload fields e.g., by calling `$("input.cloudinary-fileupload[type=file]").cloudinary_fileupload();`
-
 ## Usage
 
 The following blog post details the process of setting up a jQuery based file upload.
@@ -56,7 +52,7 @@ http://cloudinary.com/documentation
 
 ### Core JavaScript library
 
-The Core Cloudinary JavaScript library provides several classes, defined under the "`cloudinary`" domain.
+The Core Cloudinary JavaScript library provides several classes, defined under the "`cloudinary`" domain. The reference documentation is located at https://cloudinary.github.io/bower-cloudinary
 
 #### Configuration
 
@@ -84,7 +80,7 @@ When using the library in a browser environment, you can use meta tags to define
 The `init()` function is a convenience function that invokes both `fromDocument()` and `fromEnvironment()`.
 
 
-Add the following to the header tag:
+For example, add the following to the header tag:
 ```html
 <meta name="cloudinary_cloud_name" content="demo">
 ```
@@ -99,10 +95,10 @@ cl.init();
 
 ##### From environment variables
 
-When using the library in a backend environment, such as NodeJS, you can use an environment variable to define the configuration options.
+When using the library in a backend environment such as NodeJS, you can use an environment variable to define the configuration options.
 
 Set the environment variable, for example:
-```sh
+```shell
 export CLOUDINARY_URL=cloudinary://demo
 ```
 In your JavaScript source, invoke `fromEnvironment()`:
@@ -128,7 +124,7 @@ cl.url( "sample", { width: 100, crop: "fit"})
 
 You can generate HTML tags in several ways:
 
-`Cloudinary::image()` generates a DOM tag, and prepares it for responsive functionality. This is the same functionality as `$.cloudinary.image()`. (When using the jQuery plugin, the `src-cache` data attribute is stored using jQuery's `data()` method and so is not visible.)
+`Cloudinary::image()` generates a DOM tag, and prepares it for responsive functionality. This is the same functionality as `$.cloudinary.image()` in the Cloudinary jQuery library.
 
 ```javascript
 cl.image("sample")
